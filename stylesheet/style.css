@@ -9,13 +9,7 @@
 
 html {
     height: 100%;
-    background: #2E6198; /* fallback for old browsers */
-    background-image: url(../images/background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+    background: #2E6198; 
 }
 
 body {
@@ -24,238 +18,25 @@ body {
     background: transparent;
 }
 
-/*Home Content*/
-section {
-    height: 93% !important;
-    color: white;
-}
-
-.title {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 5em;
-    text-shadow: 0px 0px 60px #13d9c8;
-    letter-spacing: 3px;
-}
-
-.bold {
-    font-weight:900 !important;
-    color: #fff;
-}
-
-.tt {
-    color: #fff;
-}
-
-.description{
-    margin: 30px 0px 40px;
-    font-size: 1.2em;
-    font-weight: lighter;
-}
-
-.txt {
-    color: #D9D9D9;
-    font-size: 1.2em;
-}
-
-.button {
-    color:#2E6198;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 60px #13d9c8;
-    width: 40%;
-    height: 3em;
-    line-height: 2em;
-}
-
-.button:hover {
-    border: 1.5px solid white !important;
-}
-/*------------------*/
-
-/*Carousel*/
-#mainSlider {
-    width: 80%;
-    margin: 0 7.5% 0px;
-    border-radius: 50px;
-    box-shadow: 20px 20px 80px #13d9c9b3;
-}
-
-#secundarySlider {
-    width: 80%;
-    border-radius: 50px;
-    box-shadow: 15px 15px 80px #13d9c9b3;
-}
-
-.carousel-item img {
-    border-radius: 50px;
-}
-/*------------------*/
-
-/*Footer*/
-footer {
-    border-top-left-radius: 65px;
-    border-top-right-radius: 65px;
-    background-color: #D9D9D9;
-    box-shadow:0px -4px 48px #13d9c8;
-    height: 7% !important;
-}
-
-.box-footer {
-    padding-right: 0px;
-    padding-left: 0px;
-    align-self: center !important;
-    text-transform: uppercase;
-    color: #2E6198;
-}
-
-.box-logo {
-    background-color: #2E6198;
-    width: 22%;
-    padding: 5px 10px 5px;
-    border-radius: 30px;
-}
-
-.divider {
-    width: 15px;
-    height: 50px;
-}
-
-.box-footer h5 {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 0px !important;
-}
-/*------*/
-
-/*Devices with X-small height*/
-@media (max-height: 670px) and (max-width: 991px){
-    footer {
-        display: none;
-    }
-}
-
-/*Devices with small height*/
-@media (max-height: 730px) and (max-width: 991px) {
-    .title {
-        font-size: 2em !important;
-    }
-    .description {
-        font-size: 1em !important;
-    }
-}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    /*Content*/
-    section {
-        text-align: center;
-        padding-top: 80px;
-    }
-    .title {
-        font-size: 3em;
-    }
-    .description {
-        font-size: 1.2em;
-    }
-
-    #secundarySlider{
-        width: 90%;
-        margin: 0px 5% 10px 5% !important;
-        box-shadow: 0px 0px 20px #13d9c97e;
-    }
-
-    .button {
-        width: 60%;
-        height: 130%;
-        margin: 30px 20% 0px;   
-        line-height: normal;
-    }
-    /*------*/
-
-    /*Footer*/
-    .box-footer h5 {
-        font-size: 0.7em;
-    }
-    .box-logo {
-        width: 50%;
-    }
-    .divider {
-        height: 35px;
-    }
-    /*------*/
+    
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    /*Content*/
-    section {
-        text-align: center;
-    }
-    .title {
-        font-size: 3.2em;
-    }
-
-    #secundarySlider{
-        width: 90%;
-        margin: 0px 5% 10px 5%;
-        box-shadow: 0px 0px 30px #13d9c97e;
-    }
-
-    .button {
-        width: 60%;
-        margin: 30px 20% 0px;
-    }
-    /*------*/
-
-    /*Footer*/
-    .box-footer h5 {
-        font-size: 0.9em;
-    }
-    .box-logo {
-        width: 50%;
-    }
-    .divider {
-            height: 40px;
-    }
-   /*------*/
+    
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    /*Content*/
-    section {
-        text-align: center;
-    }
-    .title {
-        font-size: 3.5em;
-    }
-
-    #secundarySlider{
-        width: 80%;
-        margin: 0px 10% 0px 10%;
-        box-shadow: 0px 0px 50px #13d9c9bf;
-    }
-    .button {
-        width: 50%;
-        margin: 30px 25% 0px;
-        font-size: large;
-    }
-    /*--------*/
-
-    /*Footer*/
-    .box-logo {
-        width: 40%;
-    }
-    /*------*/
+    
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    .title {
-        font-size: 4em;
-    }
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
