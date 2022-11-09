@@ -1,0 +1,14 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+*,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-family: montserrat, arial, verdana;
+}
