@@ -1,11 +1,11 @@
 /* NavBar */
-#mainNavBar {
-    background: transparent;
+#mainNavBar:not(.sticky) {
+    transition: 0.2s ease-in-out;
 }
 
 .nav-item .active {
     border-bottom: 3px solid #ff7927;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 #mainNavBar .nav-item {
@@ -16,14 +16,179 @@
     padding-left: 12px;
     padding-right: 12px;
 }
+
+#mainNavBar .navbar-collapse .nav-item .active{
+    margin-left: 5px !important;
+    padding-left: 0px !important;
+}
+
+.navbar-expand {
+    border: 2px solid red;
+}
+/*--------*/
+
+/* NavBar on Scroll*/
+#mainNavBar.sticky {
+    transition: 0.3s ease-in-out;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0.5px 10px #131313;
+}
+
+#mainNavBar.sticky .nav-item a {
+    color: #131313 !important;
+}
+
+.collapsed-background {
+    background-color: #131313;
+}
 /*--------*/
 
 
+/*Hover effects*/
+#mainNavBar:not(.sticky) .nav-item a:not(.active) {
+    background-image: linear-gradient(to right,
+            #ff7927,
+            #ff7927 50%,
+            #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNavBar .nav-item a:not(.active) {
+    background-image: linear-gradient(to right,
+            #ff7927,
+            #ff7927 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNavBar .nav-item a:not(.active)::before {
+    content: '';
+    background: #ff7927;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#mainNavBar .nav-item a:hover {
+    background-position: 0;
+}
+
+#mainNavBar .nav-item a:hover::before {
+    width: 100%;
+}
+/*----------------------*/
+
+/*Custom Button Hamburguer*/
+.navbar-toggler {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+#mainNavBar.sticky .toggler-icon {
+    background: rgb(50,50,50);
+    background: linear-gradient(90deg, rgba(50,50,50,1) 70%, rgba(255,121,39,1) 100%);
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,121,39,1) 100%);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/*State when the navbar is collapsed*/
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+/*----------------------------------*/
+
+/*When navigation is clicked*/
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}
+/*------------------------*/
+
+
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        margin: auto;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-brand {
+        margin: auto;
+    }
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
