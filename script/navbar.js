@@ -1,4 +1,4 @@
-const buttonHamburguer = document.getElementsByClassName("navbar-toggler");
+const buttonCollapsed = document.getElementById("buttonCollapsed");
 var header = document.getElementById("mainNavBar")
 
 window.addEventListener("scroll", function (){
@@ -22,7 +22,7 @@ function stickyFunction() {
     }
 }
 
-buttonHamburguer = window.addEventListener('click', event => {
+buttonCollapsed.addEventListener('click', event => {
     // Disable Dark Navbar
     if(header.classList.contains("open-collapsed")){
         header.classList.remove("open-collapsed")
