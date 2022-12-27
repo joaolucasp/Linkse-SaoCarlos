@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
+
+/*Hover Effect On Image Card*/
+.card-image-box {
+    overflow: hidden;
+    background-color: #2929290a;
+}
+
+.card-image {
+    opacity: 0.9;
+    -webkit-transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+}
+
+.card-image:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*-------------------------*/
+
+.card {
+    padding: 0 !important;
+}
+
+.card-body {
+    background-color: #292929;
+    color: white;
+    margin-left: 0 !important;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    color: whitesmoke;
+    background-color: #ff7927;
+}
+
+/*Writing Formatting*/
+.card-title {
+    text-shadow: 2px 2px 2px 2px #5a5a5a;
+    color: #FF8940;
+    font-weight: 650;
+}
+.card-text {
+    font-family: raleway;
+    margin-bottom: 8px;
+}
+
+.card-value {
+    justify-content: space-between;
+}
+
+.card-value-price {
+    font-family: Montserrat;
+}
+
+.card-value .card-text {
+    color: #00A9AD;
+}
+/*------------------*/
